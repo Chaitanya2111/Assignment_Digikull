@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Hello world
+ <script>
+    console.log(`Exercise 1`);
+
+let basket = {
+  value: 0,
+  addToBasket(itemValue) {
+    this.value += itemValue;
+  },
+  clearBasket() {
+    this.value = 0;
+  },
+  getBasketValue() {
+    return this.value;
+  },
+  pay() {
+    console.log(this.getBasketValue() + 'rs. has been paid,Thank you');
+  },
+};
+
+basket.addToBasket(20);
+console.log(basket.getBasketValue());
+basket.pay();
+basket.clearBasket();
+console.log(basket.getBasketValue());
+basket.pay();
+
+console.log(`Exercise 2`);
+
+let myBasket = {
+  items: [],
+  addToBasket(itemName, ItemPrice) {
+    this.items.push({ itemName, ItemPrice });
+    super.addToBasket(ItemPrice);
+  },
+  clearBasket() {
+    this.items = [];
+    super.clearBasket();
+  },
+};
+
+Object.setPrototypeOf(myBasket ,basket);
+
+ </script>  
+</body>
+</html>

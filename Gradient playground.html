@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grad {
+	background-image: linear-gradient(red, black);
+  /*edit the line above to specify the gradient direction*/
+  width: 100vw;
+  height: 100vh;
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to top,orange,white,green);
+    margin: 50px;
+   align-items: center;
+    text-align: center;
+   
+
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to bottom,orange,white,green);
+    margin: 50px;
+    text-align: center;
+
+}
+#box3{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to right,orange,white,green);
+    margin: 50px;
+    text-align: center;
+
+}
+#box4{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to left,orange,white,green);
+    margin: 50px;
+    text-align: center;
+
+}
+
+.grad1{
+  background-color: skyblue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+</style>
+<body>
+    <div class="grad">
+        <div id="box1">A </div>
+        <div id="box2">B</div>
+        <div id="box3">C</div>
+        <div id="box4">D</div>
+       
+   </div>
+  
+   <div class="grad1">
+  
+     <p> The linear-gradient () CSS function creates an image consisting of a progressive transition between two or more colors along the straight line</p>
+  
+</div>
+</body>
+</html>
